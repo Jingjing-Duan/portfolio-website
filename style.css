@@ -35,6 +35,7 @@ nav {
   background-color: var(--my-color-primary);
 }
 body {
+  zoom: 90%;
   background-color: var(--my-color-primary);/* 或你页面背景的颜色 */
   padding-top: 85px;
 }
