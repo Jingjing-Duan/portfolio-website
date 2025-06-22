@@ -8,53 +8,87 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg my-bg-secondary py-3" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg fixed-top py-3" data-bs-theme="dark">
     <div class="container-lg">
-      <a class="navbar-brand" href="#">Jingjing Duan</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item me-3">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#project">Projects</a>
           </li>
           <li class="nav-item me-3">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about">Experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
+      <a href="#">
+        <img src="images/JDLog.png"  alt="JD Logo" width="100" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </nav>
   <header class="my-bg-primary text-white p-5 text-center">
-    <div class="container-lg py-5">
-      <img src="images/avataaars.svg" alt="Avatar" class="mb-5" style="width: 15rem;"> 
-      <h1 class="display-1 fw-bold text-uppercase">Jingjing Duan</h1>
-      <p class="fs-2 mb-5">Web Developer</p>
+    <div class="row align-items-center">
+      <!-- 左边介绍语 -->
+      <div class="col-lg-5 mb-4">
+        <h1 class="display-1">Hello ✌︎ I'm Jingjing Duan.</h1>
+        <p class="fs-2 mb-5">
+          Web Developer | Software Developer | Oracle EBS Specialist<br>
+          China ↬ Japan ↬ Canada
+        </p>
+      </div>
+
+      <!-- 右边 about 段落 -->
+      <div class="col-lg-7 mb-4 text-start">
+        <p class="fs-4">
+          I'm a full-time Web Development student at Algonquin College, transitioning from 17+ years in enterprise software development. I bring deep experience in Oracle E-Business Suite (EBS), SQL, PL/SQL, and system integration, with a solid track record in full development cycles—from coding and testing to deployment and system maintenance. Currently, I'm building expertise in modern web technologies including Python, JavaScript, React, C#, ASP.NET, PHP, and cloud-based solutions. I thrive in Agile environments and enjoy working with cross-functional teams to create efficient, scalable systems.
+        </p>
+      </div>
     </div>
-    
+
+    <a href="#project" class="scroll-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="chevron-icon" viewBox="0 0 16 16">
+         <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+         <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+         </svg>
+    </a>
   </header>
   <main>
-    <section id="portfolio" class="p-5">
+    <section id="project" class="p-5 my-bg-primary text-white">
       <div class="container-lg py-5">
         <div class="row">
           <div class="col mb-5">
-            <h2 class="display-2 fw-bold text-uppercase text-center">Portfolio</h2>
+            <h2 class="display-2 fw-bold text-uppercase text-center">Projects</h2>
           </div>
         </div>
-        
         <div class="row gx-5">
           <div class="col-lg-6 col-xl-4 mb-5">
-            <img src="images/cabin.png" class="img-fluid rounded rounded-5" alt="project">
+            <div class="project-wrapper">
+              <a href="https://jingjing.rf.gd/index.php" target="_blank">
+                <img src="images/invoice.png" class="img-fluid rounded rounded-5" alt="project">
+                <div class="hover-text">PHP · SQLite · SQL</div>
+              </a>
+            </div>
           </div>
           <div class="col-lg-6 col-xl-4 mb-5">
-            <img src="images/cake.png" class="img-fluid rounded rounded-5" alt="project">
+            <div class="project-wrapper">
+              <a href="https://github.com/Jingjing-Duan/registration-demo" target="_blank">
+                <img src="images/Registration.png" class="img-fluid rounded rounded-5" alt="project">
+                <div class="hover-text">ASP.net · C# · Razor</div>
+              </a>
+            </div>
           </div>
           <div class="col-lg-6 col-xl-4 mb-5">
-            <img src="images/circus.png" class="img-fluid rounded rounded-5" alt="project">
+            <div class="project-wrapper">
+              <a href="https://github.com/Jingjing-Duan/woodwhimsy" target="_blank">
+                <img src="images/woodwhimsy.png" class="img-fluid rounded rounded-5" alt="project">
+                <div class="hover-text">C# · Blazor</div>
+              </a>
+            </div>
           </div>
           <div class="col-lg-6 col-xl-4 mb-5">
             <img src="images/game.png" class="img-fluid rounded rounded-5" alt="project">
@@ -72,20 +106,28 @@
       <div class="container-lg py-5">
         <div class="row">
           <div class="col mb-3">
-            <h2 class="display-2 fw-bold text-uppercase text-center">About</h2>
+            <h2 class="display-2 fw-bold text-uppercase text-center">Experience</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-5 offset-lg-1 mb-3">
-            <p class="fs-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium dolor commodi velit, perspiciatis deserunt nam tempore sit ullam dicta corporis illum sed, molestiae ducimus nisi maxime blanditiis qui minima nemo.</p>
+          <div class="col-lg-10 offset-lg-1 mb-3 text-center">
+            <p class="fs-4 text-start">
+              Below is my professional experience in enterprise software development (Oracle EBS).
+              <br>Enterprise Software Developer | Leading Japanese Enterprises      2005 – 2022
+              <br>	 Oracle EBS Customization & Implementation: 
+              <br>Developed and maintained Inventory, Procurement, Manufacturing, and Finance modules using Oracle Forms, Oracle Reports, PL/SQL, Java.
+              <br>	* System Integration & Process Automation: 
+              <br>Led RPA (UiPath) and Oracle EBS workflow automation, reducing manual operations and improving efficiency.
+              <br>	* Enterprise Application Development: 
+              <br>Built and optimized CRM and ERP solutions using Oracle OAF, Oracle BI Publisher, .NET for clients in manufacturing, retail, and healthcare industries.
+              <br>	* Project Coordination & Client Engagement: 
+              <br>Managed requirement gathering, feasibility analysis, risk assessment, and implementation for enterprise solutions, ensuring timely delivery and quality assurance.
+              <br>	* Operations & Maintenance: 
+              <br>Provided 24/7 system support, troubleshooting, and performance optimization for enterprise applications, ensuring business continuity.
+            </p>
           </div>
-          <div class="col-lg-5">
-            <p class="fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio similique est vel, soluta, corrupti quibusdam quos odit itaque repellat tempora molestias, temporibus impedit quidem reiciendis! Magnam minus vitae cum laudantium!</p>
-          </div>
-        </div>
       </div>
     </section>
-    <section id="contact" class="p-5">
+    <section id="contact" class="p-5 my-bg-primary text-white" >
       <div class="container-lg py-5">
         <div class="row">
           <div class="col mb-3">
@@ -94,29 +136,33 @@
         </div>
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
-            <form class="form p-5 border border-1">
+            <form id="contact-form" action="https://formspree.io/f/myzjddby" method="POST">
               <div class="form-group mb-3">
-                 <label class="form-label">Full Name</label>
-                 <input class="form-control">
+                <label class="form-label text-white">Full Name</label>
+                <input class="form-control" name="name" required>
               </div>
               <div class="form-group mb-3">
-                <label class="form-label">Email</label>
-                <input class="form-control" type="email">
+                <label class="form-label text-white">Email</label>
+                <input class="form-control" type="email" name="email" required>
               </div>
               <div class="form-group mb-3">
-                <label class="form-label">Message</label>
-                <textarea class="form-control"></textarea>
+                <label class="form-label text-white">Message</label>
+                <textarea class="form-control" name="message" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">Send</button>
+              <button type="submit" class="btn btn-primary btn-lg d-block mx-auto px-5">Send</button>
             </form>
+
+            <!-- 成功/失败提示 -->
+            <div id="form-status" style="display:none;"></div>
           </div>
         </div>
     </section>
   </main>
   <footer class="my-bg-secondary p-5 text-white text-center">
-    <p class="fs-2 fw-bold text-uppercase">John Doe</p>
-    <p>Copyright &copy; 2024</p>
+    <p class="fs-2 fw-bold text-uppercase">Jingjing Duan</p>
+    <p>Copyright &copy; 2025</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
